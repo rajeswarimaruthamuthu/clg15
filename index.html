@@ -1,1 +1,136 @@
-<h1>Rajeswari<h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Dashboard</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    header {
+        background: #004080;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    nav {
+        background: #0059b3;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 30px;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+
+    nav a:hover {
+        background: #003366;
+        border-radius: 5px;
+    }
+
+    .card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 5px 10px #ccc;
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .footer {
+        background: #004080;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>College Dashboard</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Students</a>
+    <a href="#">Courses</a>
+    <a href="#">Departments</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="grid">
+        <div class="card">
+            <h2>Total Students</h2>
+            <p>1,200</p>
+        </div>
+        <div class="card">
+            <h2>Courses Offered</h2>
+            <p>35</p>
+        </div>
+        <div class="card">
+            <h2>Departments</h2>
+            <p>10</p>
+        </div>
+        <div class="card">
+            <h2>Faculty</h2>
+            <p>150</p>
+        </div>
+        <div class="card">
+            <h2>Events</h2>
+            <p>5 Upcoming</p>
+        </div>
+        <div class="card">
+            <h2>Library Books</h2>
+            <p>50,000+</p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2025 College Dashboard. All Rights Reserved.</p>
+</div>
+</body>
+</html>
